@@ -38,10 +38,20 @@
           </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <a
-              href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
+              href="https://calendly.com/wikolabs"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ display: "inline-block", background: "#1e3a8a", color: "#fff", padding: "0.75rem 1.75rem", borderRadius: 4, fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}
             >
-              Voir une démo live →
+              📅 Réserver un créneau →
+            </a>
+            <a
+              href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20DetectVision%20avec%20Wikolabs."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block", background: "#25d366", color: "#fff", padding: "0.75rem 1.75rem", borderRadius: 4, fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}
+            >
+              💬 WhatsApp →
             </a>
             <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
               {[["99.2%", "précision"], ["<50ms", "latence"], ["24/7", "actif"]].map(([v, l]) => (
@@ -120,12 +130,24 @@
           Branchez DetectVision sur votre infrastructure
         </h2>
         <p style={{ color: "#93c5fd", marginBottom: "2rem" }}>Compatible toutes caméras IP. Déploiement on-premise ou cloud. RGPD ready.</p>
-        <a
-          href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
-          style={{ display: "inline-block", background: "#3b82f6", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}
-        >
-          Contacter l'équipe →
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a
+            href="https://calendly.com/wikolabs"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "inline-block", background: "#3b82f6", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}
+          >
+            📅 Réserver un créneau →
+          </a>
+          <a
+            href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20DetectVision%20avec%20Wikolabs."
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "inline-block", background: "#25d366", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}
+          >
+            💬 WhatsApp →
+          </a>
+        </div>
       </section>
 
       {/* Footer */}
