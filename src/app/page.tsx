@@ -1,4 +1,4 @@
-export default function DetectVisionPage() {
+﻿export default function DetectVisionPage() {
   const boxes = [
     { label: "Casque", status: "ok", color: "#16a34a", top: "18%", left: "12%", width: "22%", height: "18%" },
     { label: "Gilet MANQUANT", status: "warn", color: "#dc2626", top: "40%", left: "10%", width: "26%", height: "22%" },
@@ -15,7 +15,7 @@ export default function DetectVisionPage() {
             DetectVision
           </span>
           <a
-            href="mailto:hello@wikolabs.com?subject=DetectVision — Demande de démo"
+            href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
             style={{ background: "#3b82f6", color: "#fff", padding: "0.45rem 1.2rem", borderRadius: 4, fontWeight: 600, fontSize: "0.875rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.05em" }}
           >
             Démo
@@ -38,7 +38,7 @@ export default function DetectVisionPage() {
           </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
             <a
-              href="mailto:hello@wikolabs.com?subject=DetectVision — Demande de démo"
+              href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
               style={{ display: "inline-block", background: "#1e3a8a", color: "#fff", padding: "0.75rem 1.75rem", borderRadius: 4, fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}
             >
               Voir une démo live →
@@ -121,7 +121,7 @@ export default function DetectVisionPage() {
         </h2>
         <p style={{ color: "#93c5fd", marginBottom: "2rem" }}>Compatible toutes caméras IP. Déploiement on-premise ou cloud. RGPD ready.</p>
         <a
-          href="mailto:hello@wikolabs.com?subject=DetectVision — Demande de démo"
+          href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
           style={{ display: "inline-block", background: "#3b82f6", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}
         >
           Contacter l'équipe →
