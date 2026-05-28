@@ -14,12 +14,10 @@
           <span style={{ fontFamily: "var(--font-display)", color: "#bfdbfe", fontSize: "1.2rem", fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase" }}>
             DetectVision
           </span>
-          <a
-            href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer"
-            style={{ background: "#3b82f6", color: "#fff", padding: "0.45rem 1.2rem", borderRadius: 4, fontWeight: 600, fontSize: "0.875rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.05em" }}
-          >
+          <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button"
+            style={{ background: "#3b82f6", color: "#fff", padding: "0.45rem 1.2rem", borderRadius: 4, fontWeight: 600, fontSize: "0.875rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.05em" }}>
             Démo
-          </a>
+          </button>
         </div>
       </nav>
 
@@ -37,14 +35,10 @@
             Détection d'objets, EPI manquants, intrusions en zone interdite — DetectVision analyse votre flux vidéo en temps réel et alerte avant l'incident.
           </p>
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <a
-              href="https://calendly.com/wikolabs"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: "inline-block", background: "#1e3a8a", color: "#fff", padding: "0.75rem 1.75rem", borderRadius: 4, fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}
-            >
+            <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button"
+            style={{ display: "inline-block", background: "#1e3a8a", color: "#fff", padding: "0.75rem 1.75rem", borderRadius: 4, fontWeight: 700, fontSize: "0.95rem", textDecoration: "none" }}>
               📅 Réserver un créneau →
-            </a>
+            </button>
             <a
               href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20DetectVision%20avec%20Wikolabs."
               target="_blank"
@@ -131,14 +125,10 @@
         </h2>
         <p style={{ color: "#93c5fd", marginBottom: "2rem" }}>Compatible toutes caméras IP. Déploiement on-premise ou cloud. RGPD ready.</p>
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          <a
-            href="https://calendly.com/wikolabs"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: "inline-block", background: "#3b82f6", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}
-          >
+          <button data-cal-link="wikolabs-team/30min" data-cal-namespace="wk30min" data-cal-config='{"layout":"month_view"}' type="button"
+            style={{ display: "inline-block", background: "#3b82f6", color: "#fff", padding: "0.9rem 2.5rem", borderRadius: 4, fontWeight: 700, fontSize: "1rem", textDecoration: "none", textTransform: "uppercase", letterSpacing: "0.06em" }}>
             📅 Réserver un créneau →
-          </a>
+          </button>
           <a
             href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20DetectVision%20avec%20Wikolabs."
             target="_blank"
