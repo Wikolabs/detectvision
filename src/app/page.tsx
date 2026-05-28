@@ -153,6 +153,13 @@
       {/* Footer */}
       <footer style={{ background: "#0f172a", padding: "1.25rem 2rem", textAlign: "center" }}>
         <p style={{ color: "#475569", fontSize: "0.8rem", margin: 0 }}>© 2025 DetectVision — Un produit Wikolabs</p>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "1rem", marginTop: "0.5rem", fontSize: "0.8rem" }}>
+          <a href="mailto:team@wikolabs.com" style={{ textDecoration: "none", color: "inherit" }}>team@wikolabs.com</a>
+          <span>·</span>
+          <a href="tel:+261386626100" style={{ textDecoration: "none", color: "inherit" }}>+261 38 66 261 00</a>
+          <span>·</span>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>Prendre RDV</a>
+        </div>
       </footer>
     </main>
   );
