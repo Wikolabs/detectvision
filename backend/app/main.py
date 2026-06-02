@@ -105,11 +105,16 @@ async def process(req: GenerateRequest) -> GenerateResponse:
         raise HTTPException(status_code=400, detail="sku_required")
 
     now_iso = datetime.now(timezone.utc).isoformat()
-    user_msg = (
-        f"SKU : {sku}\nFichier image upload : {file_name or 'image_capture.jpg'}\nContexte scene : {scene or 'ligne d\\'assemblage, eclairage standard, camera HD fixe'}\nGenere le rapport d'inspection."
-        if req.lang == "fr"
-        else f"SKU: {sku}\nUploaded image file: {file_name or 'image_capture.jpg'}\nScene context: {scene or 'assembly line, standard lighting, fixed HD camera'}\nGenerate the inspection report."
-    )
+    default_scene_fr = "ligne d'assemblage, eclairage standard, camera HD fixe"
+    default_file = "image_capture.jpg"
+    if req.lang == "fr":
+        scene_ctx = scene or default_scene_fr
+        file_ctx = file_name or default_file
+        user_msg = f"SKU : {sku}\nFichier image upload : {file_ctx}\nContexte scene : {scene_ctx}\nGenere le rapport d'inspection."
+    else:
+        scene_ctx = scene or "assembly line, standard lighting, fixed HD camera"
+        file_ctx = file_name or default_file
+        user_msg = f"SKU: {sku}\nUploaded image file: {file_ctx}\nScene context: {scene_ctx}\nGenerate the inspection report."
 
     if not is_configured():
         return GenerateResponse(
