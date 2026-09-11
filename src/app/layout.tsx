@@ -1,16 +1,16 @@
-﻿import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata } from "next";
+import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-const jakarta = Plus_Jakarta_Sans({ subsets:["latin"], variable:"--font-body", display:"swap", weight:["400","500","600","700","800"] });
-export const metadata: Metadata = { title:"DetectVision — Detection d'objets et vision par ordinateur en temps reel", description:"DetectVision analyse votre flux video en temps reel : detection d'objets, EPI manquants, intrusions — et alerte avant l'incident, 24h/24." };
+const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["600", "700"] });
+const body = Instrument_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap", weight: ["400", "500", "600", "700"] });
+export const metadata: Metadata = { title:"DetectVision, Détection d'objets et vision par ordinateur en temps réel", description:"DetectVision analyse votre flux vidéo en temps réel : détection d'objets, EPI manquants, intrusions, et alerte avant l'incident, 24h/24." };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={jakarta.variable}>
+    <html lang="fr" className={`${display.variable} ${body.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
       </head>
       <body style={{ margin:0, fontFamily:"var(--font-body),'Plus Jakarta Sans',sans-serif", background:"#04080F" }}>
         {children}
