@@ -32,20 +32,20 @@ export default function DemoPage() {
   const [staticMode, setStaticMode] = useState(false);
 
   const t = lang === "fr" ? {
-    back: "Retour", title: "Démo", sub: PRODUCT + ", controle qualité visuel par YOLO custom",
-    desc: "Sélectionnez une image (ou laissez vide) et indiquez le SKU produit. Le moteur simule l'analyse YOLO custom et génère un rapport d'inspection complet avec defauts, conformite et actions recommandees. Aucune CV réelle, aucune intégration MES, c'est un POC qui montre la logique de production.",
-    fileLabel: "Image a inspecter (simulation, fichier non traite)", chooseFile: "Choisir une image", filePicked: "Image selectionnee :", noFile: "Aucune image, la simulation utilise une scene generique",
+    back: "Retour", title: "Démo", sub: PRODUCT + ", contrôle qualité visuel par YOLO custom",
+    desc: "Sélectionnez une image (ou laissez vide) et indiquez le SKU produit. Le moteur simule l'analyse YOLO custom et génère un rapport d'inspection complet avec défauts, conformité et actions recommandées. Aucune CV réelle, aucune intégration MES, c'est un POC qui montre la logique de production.",
+    fileLabel: "Image a inspecter (simulation, fichier non traite)", chooseFile: "Choisir une image", filePicked: "Image sélectionnée :", noFile: "Aucune image, la simulation utilise une scene générique",
     skuLabel: "SKU produit", skuPlaceholder: "ex: PART-A12-87X",
-    sceneLabel: "Contexte scene (optionnel)", scenePlaceholder: "ex: ligne d'assemblage moteur, eclairage LED 2700K, caméra 4K fixe top-down",
+    sceneLabel: "Contexte scene (optionnel)", scenePlaceholder: "ex: ligne d'assemblage moteur, éclairage LED 2700K, caméra 4K fixe top-down",
     generate: "Lancer l'inspection", generating: "Inference en cours...",
     briefTitle: "Rapport d'inspection", emptyHint: "Le rapport YOLO et les recommandations apparaîtront ici.",
     rejectMes: "Ecarter via MES", alertSlack: "Alerter qualité Slack", saveAudit: "Archiver pour audit",
     rejectMock: "Événement \`part_reject\` envoyé au MES Siemens Opcenter (mode démo, pas de connexion réelle)",
-    slackMock: "Alerte poussee dans #qc-realtime avec snapshot (mode démo, pas de connexion Slack)",
+    slackMock: "Alerte poussée dans #qc-realtime avec snapshot (mode démo, pas de connexion Slack)",
     auditMock: "Rapport archive dans s3://detectvision-audit/2026/05/ (mode démo, pas d'upload réel)",
     fallback: "Mode statique : la clé LLM sera ajoutée au prochain déploiement.",
     poweredBy: "Modèle :",
-    note: "DEMO POC, aucune image n'est reellement analysée par CV, aucune connexion a MES (Opcenter, Wonderware), SCADA ou Slack. Le selecteur de fichier ne fait que recuperer le nom. L'IA imagine le rapport pour la démonstration.",
+    note: "DEMO POC, aucune image n'est réellement analysée par CV, aucune connexion a MES (Opcenter, Wonderware), SCADA ou Slack. Le selecteur de fichier ne fait que récupérer le nom. L'IA imagine le rapport pour la démonstration.",
   } : {
     back: "Back", title: "Demo", sub: PRODUCT + ", visual QC via custom YOLO",
     desc: "Pick an image (or leave empty) and enter the product SKU. The engine simulates a custom YOLO analysis and generates a full inspection report with defects, compliance and recommended actions. No real CV, no MES integration, this is a POC showing production logic.",
